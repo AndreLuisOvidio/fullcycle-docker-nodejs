@@ -16,7 +16,7 @@ const sql = `CREATE TABLE IF NOT EXISTS people(
     primary key(id));
     `
 connection.query(sql)
-connection.query(`DELETE FROM PEOPLE WHERE NAME = 'Andre Ovidio';`);
+connection.query(`DELETE FROM people WHERE NAME = 'Andre Ovidio';`);
 connection.query(`INSERT INTO people(name) values('Andre Ovidio');`);
 connection.end()
 
